@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* --- Global Styles --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      font-size: 24px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(to right, #00adb5, #393e46);
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 50px;
+    }
+
+    /* --- About Section --- */
+    #about {
+      padding: 60px 10%;
+      background: #fff;
+    }
+    #about h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    /* --- Skills Section --- */
+    #skills {
+      padding: 60px 10%;
+      background: #f4f4f9;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      align-items: center;
+    }
+    .skill-card {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+    .skill-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    /* --- Projects Section --- */
+    #projects {
+      padding: 60px 10%;
+      background: #f9f9f9;
+    }
+    #projects h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Contact Section --- */
+    #contact {
+      padding: 60px 10%;
+      background: #fff;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 10px 20px;
+      border: none;
+      background: #00adb5;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #00727c;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Hello, I'm <span style="color:#00ffcc;">Mahasakthi M</span></h2>
+      <p>Aspiring Web Developer | Data Scientist | Programmer</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Mahasakthi M, currently pursuing my 2nd year B.Sc. in Data Science at 
+      Sree Raghavendra Arts and Science College, Keezhamoongiladi, Chidambaram.
+      I'm passionate about data analytics and creative writing, and I'm currently 
+      working on building my skills through relevant coursework and extracurriculars.
+      I enjoy reading books, solving problems with code, and collaborating on group projects.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px;">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++">
+        <p>C++</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code">
+        <p>VS Code</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A short description of your project goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A short description of your project goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>A short description of your project goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="5" placeholder="Your Message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mahasakthi M. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
